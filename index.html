@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mukul's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mukul's Static Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #dcdcdc;
+    }
+
+    .btn {
+      padding: 0.8rem 1.6rem;
+      background-color: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e68900;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Mukul's Site 🚀</h1>
-  <p>This is hosted on AWS S3 via Terraform</p>
+  <h1>🚀 Welcome to Mukul's Static Site</h1>
+  <p>This website is hosted on <strong>Amazon S3</strong> using Terraform IaC and deployed via AWS CLI 💻</p>
+  <a href="https://github.com/MukulB0412/S3-static-site" target="_blank" class="btn">View on GitHub</a>
+  <footer>
+    Mukul Bhardwaj
+  </footer>
 </body>
 </html>
-
